@@ -1,0 +1,17 @@
+name: StaffMode
+main: SleakGaming1\StaffMode\StaffMode
+description: A plugin that enables staff mode for staff.
+version: 1.0.0
+api: 5.0.0
+author: SleakGaming1
+commands:
+  sm:
+    permission: "staffmode.command"
+    description: "Toggle staff mode."
+  staffmode:
+    permission: "staffmode.command"
+    description: "Toggle staff mode."
+permissions:
+  staffmode.command:
+    description: "Allows players to toggle staff mode."
+    default: op
