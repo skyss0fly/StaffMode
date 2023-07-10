@@ -40,6 +40,10 @@ class StaffMode extends PluginBase implements Listener {
             } else {
                 $sender->sendMessage(TextFormat::RED . "You don't have permission to use staff mode.");
             }
+         elif (!$sender instanceof Player) {
+          $sender->sendMessage(TextFormat::RED . "You must be In game to execute this game");
+         return false;
+        }
             return true;
         }
         return false;
